@@ -1,0 +1,7 @@
+function integrale() {
+    
+}
+
+function somme() {
+    
+}
