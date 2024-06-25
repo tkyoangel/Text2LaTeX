@@ -1,14 +1,20 @@
 function integrale() {
     // Obtenir le modal
     var modal = document.getElementById("myModal");
-    document.getElementById("label1").innerHTML = "Borne inférieure"
+    document.getElementById("label1").innerHTML = "Borne inférieure de l'intégrale"
+    document.getElementById("label2").innerHTML = "Borne supérieure de l'intégrale"
+    document.getElementById("label3").innerHTML = "Fonction à intégrer"
+    document.getElementById("modalType").innerHTML = "Ajout d'une intégrale"
     modal.style.display = "block";
+    console.log("Bribs")
 }
 
 function somme() {
     // Obtenir le modal
     var modal = document.getElementById("myModal");
-    document.getElementById("label1").innerHTML = "Borne d'en bas de la somme"
+    document.getElementById("label1").innerHTML = "Borne inférieure de la somme"
+    document.getElementById("label2").innerHTML = "Borne supérieure de la somme"
+    document.getElementById("label3").innerHTML = "Contenu de la somme"
     modal.style.display = "block";
 }
 
@@ -20,15 +26,14 @@ function closeModal() {
     // Lorsque l'utilisateur clique sur le bouton de soumission
 function submitModal() {
     var modal = document.getElementById("myModal");
-    var field1 = document.getElementById("field1").value;
-    var field2 = document.getElementById("field2").value;
-    var field3 = document.getElementById("field3").value;
-
-    // Traitez les valeurs ici comme vous le souhaitez
-    console.log("Champ 1:", field1);
-    console.log("Champ 2:", field2);
-    console.log("Champ 3:", field3);
+    let a = document.getElementById("field1").value;
+    let b = document.getElementById("field2").value;
+    let c = document.getElementById("field3").value;
 
     // Fermez le modal après la soumission
     modal.style.display = "none";
+    let TypeDeModal = document.getElementById("modalType").innerHTML
+    if(TypeDeModal == "Ajout d'une intégrale"){
+        let textArea = document.getElementById("")
+    }
 }
