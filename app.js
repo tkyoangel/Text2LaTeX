@@ -6,7 +6,6 @@ function integrale() {
     document.getElementById("label3").innerHTML = "Fonction à intégrer"
     document.getElementById("modalType").innerHTML = "Ajout d'une intégrale"
     modal.style.display = "block";
-    console.log("Bribs")
 }
 
 function somme() {
@@ -15,6 +14,7 @@ function somme() {
     document.getElementById("label1").innerHTML = "Borne inférieure de la somme"
     document.getElementById("label2").innerHTML = "Borne supérieure de la somme"
     document.getElementById("label3").innerHTML = "Contenu de la somme"
+    document.getElementById("modalType").innerHTML = "Ajout d'une somme"
     modal.style.display = "block";
 }
 
@@ -34,6 +34,11 @@ function submitModal() {
     modal.style.display = "none";
     let TypeDeModal = document.getElementById("modalType").innerHTML
     if(TypeDeModal == "Ajout d'une intégrale"){
-        let textArea = document.getElementById("")
+        let textArea = document.getElementById("latex")
+        textArea.value += "\\" + "int_{" + a + "}^{" + b + "} " + c;
+    }
+    if(TypeDeModal == "Ajout d'une somme"){
+        let textArea = document.getElementById("latex")
+        textArea.value += "\\" + "sum_{" + a + "}^{" + b + "} " + c;
     }
 }
