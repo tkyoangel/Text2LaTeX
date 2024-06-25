@@ -11,10 +11,21 @@
     <script type="text/javascript" src="app.js"></script>
     <textarea id="latex" name="latex" rows="10" cols="100"></textarea>
     <br>
+    <h2>Greek Letters</h2>
+    <button id="alpha" onclick="alpha()">&alpha;</button>
+    <button id="omega" onclick="omega()">&omega;</button>
+    <button id="omegaMaj" onclick="omegaMaj()">&Omega;</button>
+    <button id="phi" onclick="phi()">&phi;</button>
+    <button id="pi" onclick="pi()">&pi;</button>
+    <button id="piMaj" onclick="piMaj()">&Pi;</button>
+    <br>
     <h2>Quantifiers</h2>
     <button id="integrale" onclick="integrale()">&int;</button>
     <button id="somme" onclick="somme()">&sum;</button>
     <button id="limite" onclick="limite()">limite</button>
+    <br>
+    <h3>Appuyez sur ctrl pour alterner entre le mode texte et le mode équation</h3>
+    <h3 id="mode" style="color: rgb(123, 255, 121);">MODE EQUATION</h3>
     <!-- Le modal -->
     <div id="myModal" class="modal">
         <div class="modal-content">
